@@ -1,0 +1,349 @@
+
+*{margin: 0; padding: 0;
+background-color: rgb(0, 0, 0);}
+
+body{text-align: center;}
+
+.loading {
+        width: 100%;
+        height: 3.8px;
+        display: inline-block;
+        position: relative;
+        background: rgba(66, 10, 10, 0.486);
+        overflow: hidden;
+      }
+      .loading::after {
+        content: '';  
+        box-sizing: border-box;
+        width: 0;
+        height: 3.8px;
+        background: rgba(153, 27, 27, 0.856);
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: animFw 2s linear;
+      }
+      
+      @keyframes animFw {
+        0% {
+          width: 0;
+        }
+        100% {
+          width:100%;
+        }
+      }
+
+header {color: rgb(197, 32, 32);
+        font-size:60px;
+        font-family: texto1;}
+
+@font-face {
+    font-family:texto1 ;
+    src: url(../textos1/RubikDistressed-Regular.ttf);}
+
+@font-face {
+    font-family:texto2;
+    src: url(../textos2/Orbitron-VariableFont_wght.ttf);}
+
+
+.fondon{background-color: black;}
+
+.final{display: grid;
+        grid-template-columns:repeat(3,1fr) ;
+        grid-auto-rows: 50px 50px;
+        justify-items: center;
+        align-items: center;
+        background-color: rgb(13, 61, 61);}
+.qr{grid-column: 3/4;
+        grid-row: 1/3;}
+.qr img{width:30%;}
+footer div{background-color: rgb(13, 61, 61);}
+
+
+
+h1{background: none;}
+
+.item .fa-bars{display: none;}
+
+/*index*/
+
+.tarjetas div ul li {display: block;}
+
+.taller{background-color: black;}
+
+.item{background-color:rgb(13, 61, 61);
+        }
+.logotaller{width: 80px;
+        display: grid;
+                background-color:transparent;
+                position: fixed;}
+
+.item ul{background-color:rgb(13, 61, 61);
+        list-style: none;
+        width: 100%;
+        height: 80px;
+        }
+.item ul li{text-decoration: none;
+                margin: 5px;
+                background-color:rgb(13, 61, 61);
+                display: inline-block;
+                padding: 5px;
+                font-size: 20px;
+                font-family: texto1;
+               }
+.item ul li a{color: rgb(182, 26, 26);
+                background-color:transparent;
+                }
+
+     
+footer h1{color: rgb(223, 220, 228);
+        font-size:10px;}
+footer img{width:30px;}
+
+.imagen1 {width: 800px;}
+.tarjetas div ul li{color: rgb(0, 0, 0);
+                        background-color: aliceblue;}
+.tarjetas div a{background: none;}
+.tarjetas div h4{background: none;}
+
+/*
+padding-top: 20px;
+padding-right:25px;
+padding-bottom:10px;
+padding-left:15px;
+es igual a
+padding: 10px 20px 30px 40px;
+
+margin: 10px 30px 40px 20px;
+ */
+
+div h4 a {text-decoration: none;
+        color: rgb(198, 20, 20);}
+
+.tarjetas{display: flex;}
+
+.tarjeta1 {background-color: aliceblue;
+                width: 500px;
+                border: solid 1px;
+                padding: 10px;
+                margin: 10px;}
+.tarjeta11{margin: 5px;
+        font-size: 30px;}
+.im1{width: 100%;}
+
+.tarjeta2 {background-color: aliceblue;
+                width: 500px;
+                border: solid 1px;
+                padding: 10px;
+                margin: 10px;}
+.tarjeta21{margin: 5px;
+        font-size: 30px;}
+.im2{width: 90%;}
+
+.tarjeta3 {background-color: aliceblue;
+                width:500px;
+                border: solid 1px;
+                padding: 10px;
+                margin: 10px;}
+.tarjeta31{margin: 5px;
+        font-size: 30px;}
+.im3{width:85%;}
+
+.tarjeta4 {background-color: aliceblue;
+                width:500px;
+                border: solid 1px;
+                padding: 10px;
+                margin: 10px;}
+.tarjeta41{margin: 5px;
+        font-size: 30px;}
+.im4{width: 100%;}
+
+.tarjeta5 {background-color: aliceblue;
+                width:500px;
+                border: solid 1px;
+                padding: 10px;
+                margin: 10px;}
+.tarjeta51{margin: 5px;
+        font-size: 30px;}
+.im5{width: 70%;}
+
+.pintura1{border: solid;
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        font-size: 17px;
+        width: 30;}
+aside h1 {color: rgb(201, 58, 15);
+        font-family:texto1 ;
+        background-color: rgb(0, 0, 0);}
+.galeria div img{width:300px;}
+.galeria{width: 100%;
+        height: 300%;
+        display: flex;
+        flex-direction: row;}
+.cajas1{width:50%;
+        height: 300%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: .4s;}
+.cajas1 :hover{transform:scale(1.2)}
+.cajas2{width:50%;
+        height: 300%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        translate: .4s;}
+.cajas2 :hover{transform:scale(1.2)}
+
+h3{color: aliceblue;}
+
+/*reservas*/
+
+.imagen5{width: 1000px;}
+
+fieldset{color: rgb(253, 253, 253);
+        font-family:texto2;
+        background-color: rgb(0, 0, 0);}
+
+main label {color: rgb(163, 39, 39);}
+
+.boton1{color: rgba(189, 33, 33, 0.5);
+        border: 1px solid;
+        padding: 10px;
+        background-color: rgba(53, 10, 10, 0.377);
+        border-radius: 80px;}
+
+        #fechaactual i { cursor: pointer ; }
+        #fechaactual i:hover { color: rgb(219, 30, 30); text-decoration: underline; }
+        /*formulario de busqueda de fechas*/
+        #buscafecha { background-color: rgb(13, 61, 61); color: #c2c2c2; padding: 5px }
+        #buscafecha select, #buscafecha input  { background-color: #9bf5ff; 
+                    color: #cf1818d2; font: bold 10pt arial;  }
+        #buscafecha [type=text]  { text-align: center; }
+        #buscafecha  [type=button] { cursor: pointer; }
+        /*cabecera del calendario*/ 
+        #anterior { float: left; width: 100px; font: bold 12pt arial;
+                  padding: 0.5em 0.1em; cursor: pointer ; }
+        #posterior { float: right; width: 100px; font: bold 12pt arial; 
+                  padding: 0.5em 0.1em; cursor: pointer ;}
+        #anterior:hover {color: rgb(255, 255, 255);text-decoration: underline;}
+        #posterior:hover {color: blue; text-decoration: underline;}
+        #titulos { font: normal 20pt "arial black"; padding: 0.2em; }
+
+/*ploteo*/
+
+.imagen2{width:700px;}
+
+.ploteo1{width: 500px;
+        border: solid;
+        margin: 10px;
+        padding: 10px;
+        color: blueviolet;}
+.ploteo1 img {width: 100%;}
+
+.ploteo2{width: 500px;
+        border: solid;
+        margin: 10px;
+        padding: 10px;
+        color: blueviolet;}
+.ploteo2 img {width: 100%;}
+
+.ploteo3{width: 500px;
+        border: solid;
+        margin: 10px;
+        padding: 10px;
+        color: blueviolet;}
+.ploteo3 img {width: 100%;}
+
+.ploteo4{width: 500px;
+        border: solid;
+        margin: 10px;
+        padding: 10px;
+        color: blueviolet;}
+.ploteo4 img {width: 100%;}
+
+/*detailing*/
+
+.lorem{color: rgb(240, 245, 245);}
+
+.imagen4{width: 700px;}
+
+.directo ul li a{color: brown;
+                text-decoration: none;
+                }
+
+.det1 {background-color: aliceblue;
+        width: 250px;
+        border:solid;
+        margin: 10px;
+        padding: 10px;
+        border-color: rgb(201, 151, 144);}
+div p {background: none;
+        color: rgb(202, 22, 22);}
+.det1 img {width: 100%;}
+
+.det2 {background-color: aliceblue;
+        width: 250px;
+        border:solid;
+        margin: 10px;
+        padding: 10px;
+        border-color: rgb(201, 151, 144);}
+.det2 img {width: 100%;}
+
+.det3 {background-color: aliceblue;
+        width: 250px;
+        border:solid;
+        margin: 10px;
+        padding: 10px;
+        border-color: rgb(201, 151, 144);}
+.det3 img {width: 100%;}
+
+.det4 {background-color: aliceblue;
+        width: 250px;
+        border:solid;
+        margin: 10px;
+        padding: 10px;
+        border-color: rgb(201, 151, 144);}
+.det4 img {width: 100%;}
+
+
+/*repintado*/
+
+h1{color: aliceblue;}
+
+.caja2{display: flex;
+        flex-direction: row;
+        justify-content: space-around;}
+
+.repintado1{width: 250px;
+        border: solid;
+        padding: 10px;
+        margin: 10px;
+        color: rgb(255, 255, 255);}
+
+.repintado1 img {width: 100%;}
+
+.repintado2{width: 250px;
+        border: solid;
+        padding: 10px;
+        margin: 10px;
+        color: rgb(255, 255, 255);}
+
+.repintado2 img {width: 100%;}
+
+.repintado3{width: 250px;
+        border: solid;
+        padding: 10px;
+        margin: 10px;
+        color: rgb(245, 245, 245);}
+
+.repintado3 img {width: 100%;}
+
+.repintado4{width: 250px;
+        border: solid;
+        padding: 10px;
+        margin: 10px;
+        color: rgb(255, 255, 255);}
+
+.repintado4 img {width: 100%;}
