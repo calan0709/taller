@@ -11,7 +11,7 @@ body{text-align: center;}
         position: relative;
         background: rgba(66, 10, 10, 0.486);
         overflow: hidden;}
-
+    
       .loading::after {
         content: '';  
         box-sizing: border-box;
@@ -23,6 +23,9 @@ body{text-align: center;}
         left: 0;
         animation: animFw 2s linear;
       }
+
+      .fa-duotone{color: #9bf5ff;
+        }
       
       @keyframes animFw {
         0% {
