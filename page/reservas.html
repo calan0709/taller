@@ -22,182 +22,180 @@
 <header>
     RESERVAS
 </header> 
-<main>
-
-    <div class="fondon">
+<div class="fondon">
   <img class="imagen5" src="/assets/image/4.jpg" alt="">
     </div>
-<hr>
+<main>
 
-<br>
-<div>
+  
+
+<div class="videoregistro">
     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/TgW7WzTGV0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<br>
-<fieldset>
-<legend>Registro</legend>
-<br>
-<h3>TRABAJOS</h3>
-<br>
-    <label>
-             pintura
-    <input type="radio" name="Pintura">  
-    </label>
-    <label>
-             ploteo
-      <input type="radio" name="Ploteo">  
-    </label>
-    <label>
-              opticas
-      <input type="radio" name="opticas">  
-    </label>
-    <label>
-             lustrado
-          <input type="radio" name="lustrado">  
+<div class="registro">
+    <fieldset>
+    <legend>Registro</legend>
+
+    <h3>TRABAJOS</h3>
+
+        <label>
+                pintura
+        <input type="radio" name="Pintura">  
         </label>
         <label>
-            stretch
-              <input type="radio" name="stretch">  
+                ploteo
+          <input type="radio" name="Ploteo">  
+        </label>
+        <label>
+                  opticas
+          <input type="radio" name="opticas">  
+        </label>
+        <label>
+                lustrado
+              <input type="radio" name="lustrado">  
             </label>
             <label>
-                chapa
-                  <input type="radio" name="chapa">  
+                stretch
+                  <input type="radio" name="stretch">  
                 </label>
                 <label>
-                    detailing
-                      <input type="radio" name="detailing">  
+                    chapa
+                      <input type="radio" name="chapa">  
                     </label>
                     <label>
-                        llantas
-                          <input type="radio" name="llantas">  
+                        detailing
+                          <input type="radio" name="detailing">  
                         </label>
                         <label>
-                            limpieza
-                              <input type="radio" name="limpieza">  
+                            llantas
+                              <input type="radio" name="llantas">  
                             </label>
                             <label>
-                                fibra de vidrio
-                                  <input type="radio" name="fibra de vidrio">  
+                                limpieza
+                                  <input type="radio" name="limpieza">  
                                 </label>
                                 <label>
-                                    restauracion
-                                      <input type="radio" name="restauracion">  
+                                    fibra de vidrio
+                                      <input type="radio" name="fibra de vidrio">  
                                     </label>
-<br>
-<br>
-<h3>PRODUCTOS</h3>
-<br>
-<label>
-    masilla
-    <input type="radio" name="masilla">
-</label>
-<label>
-    lijas
-    <input type="radio" name="lijas">
-</label>
-<label>
-    pintura
-    <input type="radio" name="pintura">
-</label>
-<label>
-    cinta
-    <input type="radio" name="cinta">
-</label>
-<label>
-    enpapelado
-    <input type="radio" name="enpapelado">
-</label>
-<label>
-    stretch
-    <input type="radio" name="stretch">
-</label>
+                                    <label>
+                                        restauracion
+                                          <input type="radio" name="restauracion">  
+                                        </label>
 
-<br>
-<br>
-<h3>DATOS</h3>
-<br>
-        <form action="" method="get">
-            <label>
-                    Nombre:
-                    <input type="text" name="Nombre"placeholder="Ingresar Nombre">
-            </label>
-                 <br>
-                 <br>
-            <label>
-                    Apellido:
-                    <input type="text" name="Apellido"placeholder="Ingresar Apellido">
-            </label>
-                 <br>
-                 <br>
-            <label>
-                    Mail:
-                    <input type="email" name="mail" placeholder="Mail">
-            </label>
-                 <br>
-                 <br>
-            <label >
-                    Telefono:
-                    <input type="number" name="telefono" placeholder="Telefono">
-            </label>
-                <br>
-                <br>
-            <textarea name="mensaje" placeholder="mensaje"></textarea>
-                 <br>
-                 <br>
-            <input class="boton1" type="reset" value="Limpiar">
-                <br>
-                <br>
-            <input class="boton1" type="submit" value="Enviar">
-                <br>
-                <br>
-            
+    <h3>PRODUCTOS</h3>
 
-<h3>fechas disponibles</h3>
+    <label>
+        masilla
+        <input type="radio" name="masilla">
+    </label>
+    <label>
+        lijas
+        <input type="radio" name="lijas">
+    </label>
+    <label>
+        pintura
+        <input type="radio" name="pintura">
+    </label>
+    <label>
+        cinta
+        <input type="radio" name="cinta">
+    </label>
+    <label>
+        enpapelado
+        <input type="radio" name="enpapelado">
+    </label>
+    <label>
+        stretch
+        <input type="radio" name="stretch">
+    </label>
 
-<div id="calendario">
-  <div id="anterior" onclick="mesantes()"></div>
-  <div id="posterior" onclick="mesdespues()"></div>
-  <h2 id="titulos"></h2>
-  <table id="diasc">
-    <tr id="fila0"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
-    <tr id="fila1"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr id="fila2"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr id="fila3"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr id="fila4"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr id="fila5"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr id="fila6"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  </table>
-  <div id="fechaactual"><i onclick="actualizar()">HOY: </i></div>
-  <div id="buscafecha">
-    <form action="#" name="buscar">
-      <p>Buscar ... MES
-        <select name="buscames">
-          <option value="0">Enero</option>
-          <option value="1">Febrero</option>
-          <option value="2">Marzo</option>
-          <option value="3">Abril</option>
-          <option value="4">Mayo</option>
-          <option value="5">Junio</option>
-          <option value="6">Julio</option>
-          <option value="7">Agosto</option>
-          <option value="8">Septiembre</option>
-          <option value="9">Octubre</option>
-          <option value="10">Noviembre</option>
-          <option value="11">Diciembre</option>
-        </select>
-      ... AÑO ...
-        <input type="text" name="buscaanno" maxlength="4" size="4" />
-      ... 
-        <input type="button" value="BUSCAR" onclick="mifecha()" />
-      </p>
-    </form>
-  </div>
+    <br>
+    <br>
+    <h3>DATOS</h3>
+    <br>
+            <form action="" method="get">
+                <label>
+                        Nombre:
+                        <input type="text" name="Nombre"placeholder="Ingresar Nombre">
+                </label>
+                    <br>
+                    <br>
+                <label>
+                        Apellido:
+                        <input type="text" name="Apellido"placeholder="Ingresar Apellido">
+                </label>
+                    <br>
+                    <br>
+                <label>
+                        Mail:
+                        <input type="email" name="mail" placeholder="Mail">
+                </label>
+                    <br>
+                    <br>
+                <label >
+                        Telefono:
+                        <input type="number" name="telefono" placeholder="Telefono">
+                </label>
+                    <br>
+                    <br>
+                <textarea name="mensaje" placeholder="mensaje"></textarea>
+                    <br>
+                    <br>
+                <input class="boton1" type="reset" value="Limpiar">
+                    <br>
+                    <br>
+                <input class="boton1" type="submit" value="Enviar">
+                    <br>
+                    <br>
+                
+
+    <h3>fechas disponibles</h3>
+
+    <div id="calendario">
+      <div id="anterior" onclick="mesantes()"></div>
+      <div id="posterior" onclick="mesdespues()"></div>
+      <h2 id="titulos"></h2>
+      <table id="diasc">
+        <tr id="fila0"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+        <tr id="fila1"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr id="fila2"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr id="fila3"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr id="fila4"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr id="fila5"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr id="fila6"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      </table>
+      <div id="fechaactual"><i onclick="actualizar()">HOY: </i></div>
+      <div id="buscafecha">
+        <form action="#" name="buscar">
+          <p>Buscar ... MES
+            <select name="buscames">
+              <option value="0">Enero</option>
+              <option value="1">Febrero</option>
+              <option value="2">Marzo</option>
+              <option value="3">Abril</option>
+              <option value="4">Mayo</option>
+              <option value="5">Junio</option>
+              <option value="6">Julio</option>
+              <option value="7">Agosto</option>
+              <option value="8">Septiembre</option>
+              <option value="9">Octubre</option>
+              <option value="10">Noviembre</option>
+              <option value="11">Diciembre</option>
+            </select>
+          ... AÑO ...
+            <input type="text" name="buscaanno" maxlength="4" size="4" />
+          ... 
+            <input type="button" value="BUSCAR" onclick="mifecha()" />
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur dolores ex earum delectus recusandae et illo quas laboriosam? Doloribus, facilis! Voluptates possimus iste eveniet, labore similique aliquam ullam corrupti quae?</h3>
+
+    </fieldset>
 </div>
-
-<h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur dolores ex earum delectus recusandae et illo quas laboriosam? Doloribus, facilis! Voluptates possimus iste eveniet, labore similique aliquam ullam corrupti quae?</h3>
-
-</fieldset>
-<hr>
 </main>
 <aside>
 

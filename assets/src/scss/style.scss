@@ -147,11 +147,12 @@
     footer img{width:30px;}
     
     .imagen1 {width: 800px;}
+    /*
     .tarjetas div ul li{color: rgb(0, 0, 0);
                             background-color: aliceblue;}
     .tarjetas div a{background: none;}
     .tarjetas div h4{background: none;}
-    
+    */
     /*
     padding-top: 20px;
     padding-right:25px;
@@ -163,55 +164,19 @@
     margin: 10px 30px 40px 20px;
      */
     
-    div h4 a {text-decoration: none;
-            color: rgb(198, 20, 20);}
+    div h4 
     
-    .tarjetas{display: flex;}
+
+
     
-    .tarjeta1 {background-color: aliceblue;
-                    width: 500px;
-                    border: solid 1px;
-                    padding: 10px;
-                    margin: 10px;}
-    .tarjeta11{margin: 5px;
-            font-size: 30px;}
-    .im1{width: 100%;}
     
-    .tarjeta2 {background-color: aliceblue;
-                    width: 500px;
-                    border: solid 1px;
-                    padding: 10px;
-                    margin: 10px;}
-    .tarjeta21{margin: 5px;
-            font-size: 30px;}
-    .im2{width: 90%;}
     
-    .tarjeta3 {background-color: aliceblue;
-                    width:500px;
-                    border: solid 1px;
-                    padding: 10px;
-                    margin: 10px;}
-    .tarjeta31{margin: 5px;
-            font-size: 30px;}
-    .im3{width:85%;}
     
-    .tarjeta4 {background-color: aliceblue;
-                    width:500px;
-                    border: solid 1px;
-                    padding: 10px;
-                    margin: 10px;}
-    .tarjeta41{margin: 5px;
-            font-size: 30px;}
-    .im4{width: 100%;}
     
-    .tarjeta5 {background-color: aliceblue;
-                    width:500px;
-                    border: solid 1px;
-                    padding: 10px;
-                    margin: 10px;}
-    .tarjeta51{margin: 5px;
-            font-size: 30px;}
-    .im5{width: 70%;}
+    
+    
+   
+    
     
     .pintura1{border: solid;
             padding: 10px;
@@ -362,17 +327,12 @@
     /*repintado*/
     
     h1{color: aliceblue;}
-    
+    /*
     .caja2{display: flex;
             flex-direction: row;
             justify-content: space-around;}
+   
     
-    .repintado1{width: 250px;
-            border: solid;
-            padding: 10px;
-            margin: 10px;
-            color: rgb(255, 255, 255);
-            -webkit-box-shadow: 11px 13px 37px 3px rgba(245,0,0,1);}
     
     .repintado1 img {width: 100%;}
     
@@ -402,18 +362,8 @@
             -webkit-box-shadow: 11px 13px 37px 3px rgba(245,0,0,1);}
     
     .repintado4 img {width: 100%;}
+     */
     
-    .logoauto{display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: center;
-            width: 100%;
-            height: 20%;}
-    .imglogo{
-            width: 50px;
-            height:50px;
-            padding: 2px;
-            margin: 2px;}
-    
+
     
     @media (max-width: 600px){}

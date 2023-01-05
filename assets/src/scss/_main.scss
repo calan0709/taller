@@ -1,0 +1,102 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(4,4fr);
+        h1{grid-column: 1/5;
+            grid-row: 1/2;
+            color: rgb(211, 34, 34);
+            font-family: texto1;
+            font-weight: lighter;
+            font-size: 30px;}
+        .videos{padding: 10px;
+                margin: 1px;
+                grid-column:1/5;
+                grid-row:3/4 ;
+                .video1{width: 80%;
+                        height: 500px;}
+                    }
+        .tarjetas{height: 100%;
+                    grid-column: 1/5;
+                    grid-row: 2/3;
+                    display: flex;
+                    .tarjeta1 {width: 100%;
+                        background-color: rgb(255, 255, 255);
+                        border: solid 1px;
+                        padding: 10px;
+                        margin: 10px;
+                        img{width: 100%;}
+                        h4{font-size: 30px;
+                            background-color: transparent;
+                            a{background-color: transparent;
+                                color: rgb(189, 55, 31);}
+                        }
+                        .tarjeta11{}
+                        ul{background-color: transparent;
+                            li{background-color: transparent;}}}
+                        }
+                    
+                        }
+        h2{color: rgb(110, 110, 110);
+            font-size: 18px;}
+        .directo{grid-column: 1/5;
+                grid-row: 4/5;
+                .logoauto{display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: center;
+                    width: 100%;
+                    height: 20%;}
+                img{
+                    width: 50px;
+                    height:50px;
+                    padding: 2px;
+                    margin: 2px;}}
+        .directo2{grid-column: 1/5;
+                grid-row: 4/5;
+            .logoauto{display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                height: 20%;}
+            img{
+                width: 50px;
+                height:50px;
+                padding: 2px;
+                margin: 2px;}}
+        h3{grid-column: 1/5;
+            color: rgb(182, 55, 23);}
+    .videoregistro{grid-column: 1/2;
+                    padding: 10px;
+                    margin: 10px;}
+    .registro{grid-column: 2/5;
+                padding: 5px;
+                margin: 5px;}
+    .logoauto8{grid-column: 1/5;
+                grid-row: 1/2;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                height: 20%;
+                img{
+                    width: 50px;
+                    height:50px;
+                    padding: 2px;
+                    margin: 2px;}}
+    .logo8{grid-column: 1/5;
+            grid-row: 3/4;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            height: 20%;
+            img{
+                width: 50px;
+                height:50px;
+                padding: 2px;
+                margin: 2px;}}
+
+    
+    

@@ -1,3 +1,150 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+}
+main h1 {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  color: rgb(211, 34, 34);
+  font-family: texto1;
+  font-weight: lighter;
+  font-size: 30px;
+}
+main .videos {
+  padding: 10px;
+  margin: 1px;
+  grid-column: 1/5;
+  grid-row: 3/4;
+}
+main .videos .video1 {
+  width: 80%;
+  height: 500px;
+}
+main .tarjetas {
+  height: 100%;
+  grid-column: 1/5;
+  grid-row: 2/3;
+  display: flex;
+}
+main .tarjetas .tarjeta1 {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px;
+  padding: 10px;
+  margin: 10px;
+}
+main .tarjetas .tarjeta1 img {
+  width: 100%;
+}
+main .tarjetas .tarjeta1 h4 {
+  font-size: 30px;
+  background-color: transparent;
+}
+main .tarjetas .tarjeta1 h4 a {
+  background-color: transparent;
+  color: rgb(189, 55, 31);
+}
+main .tarjetas .tarjeta1 ul {
+  background-color: transparent;
+}
+main .tarjetas .tarjeta1 ul li {
+  background-color: transparent;
+}
+
+h2 {
+  color: rgb(110, 110, 110);
+  font-size: 18px;
+}
+
+.directo {
+  grid-column: 1/5;
+  grid-row: 4/5;
+}
+.directo .logoauto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+.directo img {
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  margin: 2px;
+}
+
+.directo2 {
+  grid-column: 1/5;
+  grid-row: 4/5;
+}
+.directo2 .logoauto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+.directo2 img {
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  margin: 2px;
+}
+
+h3 {
+  grid-column: 1/5;
+  color: rgb(182, 55, 23);
+}
+
+.videoregistro {
+  grid-column: 1/2;
+  padding: 10px;
+  margin: 10px;
+}
+
+.registro {
+  grid-column: 2/5;
+  padding: 5px;
+  margin: 5px;
+}
+
+.logoauto8 {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+.logoauto8 img {
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  margin: 2px;
+}
+
+.logo8 {
+  grid-column: 1/5;
+  grid-row: 3/4;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+.logo8 img {
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  margin: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -222,19 +369,12 @@ footer img {
   width: 800px;
 }
 
-.tarjetas div ul li {
-  color: rgb(0, 0, 0);
-  background-color: aliceblue;
-}
-
-.tarjetas div a {
-  background: none;
-}
-
-.tarjetas div h4 {
-  background: none;
-}
-
+/*
+.tarjetas div ul li{color: rgb(0, 0, 0);
+                        background-color: aliceblue;}
+.tarjetas div a{background: none;}
+.tarjetas div h4{background: none;}
+*/
 /*
 padding-top: 20px;
 padding-right:25px;
@@ -245,101 +385,7 @@ padding: 10px 20px 30px 40px;
 
 margin: 10px 30px 40px 20px;
  */
-div h4 a {
-  text-decoration: none;
-  color: rgb(198, 20, 20);
-}
-
-.tarjetas {
-  display: flex;
-}
-
-.tarjeta1 {
-  background-color: aliceblue;
-  width: 500px;
-  border: solid 1px;
-  padding: 10px;
-  margin: 10px;
-}
-
-.tarjeta11 {
-  margin: 5px;
-  font-size: 30px;
-}
-
-.im1 {
-  width: 100%;
-}
-
-.tarjeta2 {
-  background-color: aliceblue;
-  width: 500px;
-  border: solid 1px;
-  padding: 10px;
-  margin: 10px;
-}
-
-.tarjeta21 {
-  margin: 5px;
-  font-size: 30px;
-}
-
-.im2 {
-  width: 90%;
-}
-
-.tarjeta3 {
-  background-color: aliceblue;
-  width: 500px;
-  border: solid 1px;
-  padding: 10px;
-  margin: 10px;
-}
-
-.tarjeta31 {
-  margin: 5px;
-  font-size: 30px;
-}
-
-.im3 {
-  width: 85%;
-}
-
-.tarjeta4 {
-  background-color: aliceblue;
-  width: 500px;
-  border: solid 1px;
-  padding: 10px;
-  margin: 10px;
-}
-
-.tarjeta41 {
-  margin: 5px;
-  font-size: 30px;
-}
-
-.im4 {
-  width: 100%;
-}
-
-.tarjeta5 {
-  background-color: aliceblue;
-  width: 500px;
-  border: solid 1px;
-  padding: 10px;
-  margin: 10px;
-}
-
-.tarjeta51 {
-  margin: 5px;
-  font-size: 30px;
-}
-
-.im5 {
-  width: 70%;
-}
-
-.pintura1 {
+div h4 .pintura1 {
   border: solid;
   padding: 10px;
   margin: 10px;
@@ -614,76 +660,39 @@ h1 {
   color: aliceblue;
 }
 
-.caja2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+/*
+.caja2{display: flex;
+        flex-direction: row;
+        justify-content: space-around;}
 
-.repintado1 {
-  width: 250px;
-  border: solid;
-  padding: 10px;
-  margin: 10px;
-  color: rgb(255, 255, 255);
-  -webkit-box-shadow: 11px 13px 37px 3px rgb(245, 0, 0);
-}
 
-.repintado1 img {
-  width: 100%;
-}
 
-.repintado2 {
-  width: 250px;
-  border: solid;
-  padding: 10px;
-  margin: 10px;
-  color: rgb(255, 255, 255);
-  -webkit-box-shadow: 11px 13px 37px 3px rgb(245, 0, 0);
-}
+.repintado1 img {width: 100%;}
 
-.repintado2 img {
-  width: 100%;
-}
+.repintado2{width: 250px;
+        border: solid;
+        padding: 10px;
+        margin: 10px;
+        color: rgb(255, 255, 255);
+        -webkit-box-shadow: 11px 13px 37px 3px rgba(245,0,0,1);}
 
-.repintado3 {
-  width: 250px;
-  border: solid;
-  padding: 10px;
-  margin: 10px;
-  color: rgb(245, 245, 245);
-  -webkit-box-shadow: 11px 13px 37px 3px rgb(245, 0, 0);
-}
+.repintado2 img {width: 100%;}
 
-.repintado3 img {
-  width: 100%;
-}
+.repintado3{width: 250px;
+        border: solid;
+        padding: 10px;
+        margin: 10px;
+        color: rgb(245, 245, 245);
+        -webkit-box-shadow: 11px 13px 37px 3px rgba(245,0,0,1);}
 
-.repintado4 {
-  width: 250px;
-  border: solid;
-  padding: 10px;
-  margin: 10px;
-  color: rgb(255, 255, 255);
-  -webkit-box-shadow: 11px 13px 37px 3px rgb(245, 0, 0);
-}
+.repintado3 img {width: 100%;}
 
-.repintado4 img {
-  width: 100%;
-}
+.repintado4{width: 250px;
+        border: solid;
+        padding: 10px;
+        margin: 10px;
+        color: rgb(255, 255, 255);
+        -webkit-box-shadow: 11px 13px 37px 3px rgba(245,0,0,1);}
 
-.logoauto {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  height: 20%;
-}
-
-.imglogo {
-  width: 50px;
-  height: 50px;
-  padding: 2px;
-  margin: 2px;
-}
+.repintado4 img {width: 100%;}
+ */
