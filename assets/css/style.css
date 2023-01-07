@@ -1,3 +1,73 @@
+header {
+  color: rgb(197, 32, 32);
+  font-size: 60px;
+  font-family: texto1;
+}
+header .loading {
+  width: 100%;
+  height: 3.8px;
+  display: inline-block;
+  position: relative;
+  background: rgba(66, 10, 10, 0.486);
+  overflow: hidden;
+}
+header .loading::after {
+  content: "";
+  box-sizing: border-box;
+  width: 0;
+  height: 3.8px;
+  background: rgba(153, 27, 27, 0.856);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: animFw 2s linear;
+          animation: animFw 2s linear;
+}
+header nav i {
+  display: none;
+}
+header nav ul {
+  background-color: rgb(13, 61, 61);
+  list-style: none;
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+}
+header nav ul .logotaller {
+  width: 120px;
+  display: grid;
+  background-color: transparent;
+  position: fixed;
+}
+header nav ul li {
+  text-decoration: none;
+  margin: 5px;
+  background-color: rgb(13, 61, 61);
+  display: inline-block;
+  padding: 5px;
+  font-size: 25px;
+  font-family: texto1;
+}
+header nav ul li a {
+  color: rgb(182, 26, 26);
+  background-color: transparent;
+}
+header nav ul li a:hover {
+  color: rgb(255, 0, 0);
+}
+header .fondon img {
+  width: 70%;
+}
+header .fondon img .imagen1 {
+  width: 800px;
+}
+header fieldset {
+  color: rgb(197, 32, 32);
+  font-size: 60px;
+  font-family: texto1;
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(4, 4fr);
@@ -148,6 +218,22 @@ h3 {
   margin: 2px;
 }
 
+aside h1 {
+  color: rgb(201, 58, 15);
+  background-color: rgb(0, 0, 0);
+}
+aside h3 {
+  color: aliceblue;
+}
+aside .galeria {
+  width: 100%;
+  height: 300%;
+  display: flex;
+  flex-direction: row;
+}
+aside .galeria img {
+  width: 300px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -157,34 +243,14 @@ h3 {
 
 body {
   text-align: center;
+  background-color: #000000;
 }
 
-.loading {
-  width: 100%;
-  height: 3.8px;
-  display: inline-block;
-  position: relative;
-  background: rgba(66, 10, 10, 0.486);
-  overflow: hidden;
-}
+/*
 
-.loading::after {
-  content: "";
-  box-sizing: border-box;
-  width: 0;
-  height: 3.8px;
-  background: rgba(153, 27, 27, 0.856);
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-animation: animFw 2s linear;
-          animation: animFw 2s linear;
-}
-
-.fa-duotone {
-  color: #9bf5ff;
-}
-
+.fa-duotone{color: #d1ff03;
+  }
+*/
 @-webkit-keyframes animFw {
   0% {
     width: 0;
@@ -193,7 +259,6 @@ body {
     width: 100%;
   }
 }
-
 @keyframes animFw {
   0% {
     width: 0;
@@ -202,16 +267,6 @@ body {
     width: 100%;
   }
 }
-.fondon img {
-  width: 70%;
-}
-
-header {
-  color: rgb(197, 32, 32);
-  font-size: 60px;
-  font-family: texto1;
-}
-
 @font-face {
   font-family: texto1;
   src: url(../textos1/RubikDistressed-Regular.ttf);
@@ -311,52 +366,9 @@ footer div {
   grid-column: 1/2;
 }
 
-h1 {
-  background: none;
-}
-
 /*index*/
-.tarjetas div ul li {
-  display: block;
-}
-
 .taller {
   background-color: black;
-}
-
-.item {
-  background-color: rgb(13, 61, 61);
-}
-
-.logotaller {
-  width: 80px;
-  display: grid;
-  background-color: transparent;
-  position: fixed;
-}
-
-.item ul {
-  background-color: rgb(13, 61, 61);
-  list-style: none;
-  width: 100%;
-  height: 80px;
-  margin: 0;
-  padding: 0;
-}
-
-.item ul li {
-  text-decoration: none;
-  margin: 5px;
-  background-color: rgb(13, 61, 61);
-  display: inline-block;
-  padding: 5px;
-  font-size: 20px;
-  font-family: texto1;
-}
-
-.item ul li a {
-  color: rgb(182, 26, 26);
-  background-color: transparent;
 }
 
 footer h1 {
@@ -366,10 +378,6 @@ footer h1 {
 
 footer img {
   width: 30px;
-}
-
-.imagen1 {
-  width: 800px;
 }
 
 /*
@@ -388,30 +396,13 @@ padding: 10px 20px 30px 40px;
 
 margin: 10px 30px 40px 20px;
  */
-div h4 .pintura1 {
+.pintura1 {
   border: solid;
   padding: 10px;
   margin: 10px;
   text-decoration: none;
   font-size: 17px;
   width: 30;
-}
-
-aside h1 {
-  color: rgb(201, 58, 15);
-  font-family: texto1;
-  background-color: rgb(0, 0, 0);
-}
-
-.galeria div img {
-  width: 300px;
-}
-
-.galeria {
-  width: 100%;
-  height: 300%;
-  display: flex;
-  flex-direction: row;
 }
 
 .cajas1 {
@@ -438,10 +429,6 @@ aside h1 {
 
 .cajas2 :hover {
   transform: scale(1.2);
-}
-
-h3 {
-  color: aliceblue;
 }
 
 /*reservas*/
