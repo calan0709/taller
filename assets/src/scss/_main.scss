@@ -27,15 +27,13 @@ main{
                         h4{font-size: 30px;
                             background-color: transparent;
                             a{background-color: transparent;
-                                color: rgb(189, 55, 31);}
-                        }
-                        .tarjeta11{}
+                                color: rgb(189, 55, 31);}}
+                        p{color: rgb(136, 45, 45);}
                         ul{background-color: transparent;
-                            li{margin:3px;
-                                background-color: transparent;}}}
-                        }
-                    
-                        }
+                            li{list-style: none;
+                                margin:3px;
+                                background-color: transparent;}
+                            }}}
         h2{color: rgb(110, 110, 110);
             font-size: 18px;
             margin: 10px;}
@@ -104,3 +102,4 @@ main{
 
     
     
+}
