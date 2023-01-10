@@ -7,12 +7,16 @@ main{
             font-weight: lighter;
             font-size: 30px;
             margin: 10px;}
-        .videos{padding: 10px;
-                margin: 1px;
+        .videos{display: grid;
+                padding: 10px;
+                margin: 10px;
                 grid-column:1/5;
-                grid-row:3/4 ;
+                grid-row:4/5 ;
+                justify-items: center;
+                align-items: center;
                 .video1{width: 80%;
-                        height: 500px;}
+                        height: 500px;
+                        }
                     }
         .tarjetas{height: 100%;
                     grid-column: 1/5;
