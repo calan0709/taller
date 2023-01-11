@@ -1,18 +1,21 @@
-nav{
+nav{width: 100%;
     i{display: none;}
-    ul{background-color:rgb(13, 61, 61);
+    ul{display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color:rgb(13, 61, 61);
             list-style: none;
             width: 100%;
             height: 120px;
             margin: 0;
             padding: 0;
-            text-align: center;
-            align-items: center;
             .logotaller{width: 120px;
                 display: grid;
                 background-color:transparent;
-                position: fixed;}
-            li{text-decoration: none;
+                }
+            li{
+                text-decoration: none;
                 margin: 5px;
                 background-color:rgb(13, 61, 61);
                 display: inline-block;
@@ -22,9 +25,45 @@ nav{
                 a{color: rgb(182, 26, 26);
                     background-color:transparent;
                     &:hover{color: rgb(255, 0, 0);}}}}
-   }
-@media (max-width: 768px){
-.item .fa-bars{display: block;
-                color: aqua;
-                font-size: 36px;}
-}
+   
+                @media (max-width: 768px){
+                        nav{width: 100%;
+                            
+                   
+                            }
+                }
+
+                @media (max-width:540px){
+                    nav{ 
+                        width: 100%;
+                    i{display: block;
+                            color: rgb(8, 232, 232);
+                            font-size: 27px;
+                        &:hover + ul {
+                            left: 0;
+                        }}
+                    ul{     top: 0;
+                        left: -300;
+                        display: flex;
+                        flex-direction: column;
+                        position: fixed;
+                        background-color: rgb(1, 1, 1);
+                        width: 260px;
+                        align-items: center;
+                        padding: 10px;
+                        justify-content: start;
+                        height: 100vh;
+                        transition: 0.2s;
+                    img{margin: 5px;
+                                }
+                    li{background-color: transparent;
+                    a{background-color: transparent;}}
+                            &:hover{
+                                left: 0;
+                            }
+                        }
+                        }
+                }
+
+
+ }

@@ -1,12 +1,15 @@
 main{
     display: grid;
-    grid-template-columns: repeat(4,4fr);
+    grid-template-columns: repeat(4,1fr);
         h1{grid-column: 1/5;
             grid-row: 1/2;
-            color: rgb(145, 142, 142);
-            font-weight: lighter;
+            color: rgb(129, 31, 31);
+            font-weight:bolder;
             font-size: 30px;
-            margin: 10px;}
+            margin: 10px;
+            text-align: center;
+            margin: 15px;
+            padding: 15px;}
         .videos{display: grid;
                 padding: 10px;
                 margin: 10px;
@@ -56,7 +59,7 @@ main{
                     padding: 2px;
                     margin: 2px;}}
         .directo2{grid-column: 1/5;
-                grid-row: 4/5;
+                grid-row: 3/4;
             .logoauto{display: flex;
                 flex-wrap: wrap;
                 flex-direction: row;
