@@ -1,8 +1,22 @@
 body{
     @media(max-width:893px){
-        nav{width: 100%;}
+        nav{width: 100%;
+            ul{justify-content:center;
+                li{font-size: 19px;}
+        }
+            
+            }
         header{width: 100%;}
-        main{width: 100%;}
+        main{width: 100%;
+            .registro{grid-column: 1/5;
+                        grid-row: 2/3;
+                padding: 5px;
+                margin: 5px;}
+            .videoregistro{grid-column: 1/5;
+                    padding: 10px;
+                    margin: 10px;
+                    .video{align-items: center;
+                        justify-content: center;}}}
         aside{width: 100%;
                 display: flexbox;
                 justify-content: center;}
