@@ -1,19 +1,18 @@
 header{ width:100%;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3,4fr);
         color: rgb(197, 32, 32);
         font-size:60px;
         font-family: texto1;
         align-items: center;
-    .fondon {grid-column: 1/5;
+        justify-content: center;
+    .fondon {grid-column: 1/4;
             grid-row: 2/3;
-            display: grid;
-            align-items: center;
-            justify-items: center;
-            width: 100%;
-        .i{width: 80%;}
-        .imagen2 {
-                width: 100%;}}
+            width:100%;
+            .i{width: 100%;}
+        .imagen2 {width: 100%;
+                padding: 20px;
+                background-color: transparent;}}
     fieldset{grid-column: 1/5;
             grid-row: 1/2;
             color: rgb(197, 32, 32);
@@ -49,10 +48,7 @@ header{ width:100%;
                 margin: 2px;}}
 
 }
-@media (max-width: 768px){
-        header{
-                fieldset{}
-                .imagen1{width: 100%;
-                }
-        }
-}
+
+
+
+

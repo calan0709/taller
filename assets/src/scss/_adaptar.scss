@@ -1,0 +1,81 @@
+body{
+    @media(max-width:893px){
+        nav{width: 100%;}
+        header{width: 100%;}
+        main{width: 100%;}
+        aside{width: 100%;
+                display: flexbox;
+                justify-content: center;}
+        footer{width: 100%;}
+    }
+
+
+
+    @media (max-width:540px){
+        nav{ width: 100%;
+                .fa-bars{display: block;
+                        color: rgba(255, 0, 0, 0.459);
+                        font-size: 37px;
+                        background-color:rgb(0, 0, 0);
+                    &:hover + ul {
+                        left: 0;
+                    }}
+                ul{ flex-direction: column;
+                    position: fixed;
+                    background-color: rgb(1, 1, 1);
+                    width: 260px;
+                    align-items: center;
+                    padding-top: 30px;
+                    justify-content: start;
+                    height: 100vh;
+                    transition: 0.2s;
+                    left:-300px;
+                    top: 1;
+                img{margin: 5px;
+                            }
+                li{background-color: transparent;
+                a{background-color: transparent;}}
+                        &:hover{
+                            left: 0;
+                        }}
+            }
+        header{width: 100%;
+                fieldset{border-color:black;}}
+        main{width: 100%;
+            display: flex;
+            flex-direction: column;
+            .video{width: 100%;}
+            .registro{
+                label{padding: 1px;
+                    margin: 1px;
+                    font-size: 13px;}
+                h3{font-size: 16px;
+                    padding: 5px;
+                    margin: 5px;}
+            }
+            .tarjetas{display: flex;
+                        flex-wrap: wrap;}
+            }
+        aside{width: 100%;
+            width: 100%;
+            display: flexbox;
+            flex-direction: column;}
+        footer{width: 100%;
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                .fin{padding: 5px;
+                        margin: 5px;
+                    button{border-color: rgb(15, 58, 17);}
+                }
+                .qr{grid-column: 3/4;
+                    grid-row: 2/3;
+                    text-align: center;
+                    justify-content: center;
+                    }
+                }
+        
+
+            }
+                    
+    
+    }

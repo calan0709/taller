@@ -1,5 +1,5 @@
-nav{width: 100%;
-    i{display: none;}
+nav{width:100%;
+    .fa-bars{display:none;}
     ul{display: flex;
         justify-content: center;
         text-align: center;
@@ -26,44 +26,4 @@ nav{width: 100%;
                     background-color:transparent;
                     &:hover{color: rgb(255, 0, 0);}}}}
    
-                @media (max-width: 768px){
-                        nav{width: 100%;
-                            
-                   
-                            }
-                }
-
-                @media (max-width:540px){
-                    nav{ 
-                        width: 100%;
-                    i{display: block;
-                            color: rgb(8, 232, 232);
-                            font-size: 27px;
-                        &:hover + ul {
-                            left: 0;
-                        }}
-                    ul{     top: 0;
-                        left: -300;
-                        display: flex;
-                        flex-direction: column;
-                        position: fixed;
-                        background-color: rgb(1, 1, 1);
-                        width: 260px;
-                        align-items: center;
-                        padding: 10px;
-                        justify-content: start;
-                        height: 100vh;
-                        transition: 0.2s;
-                    img{margin: 5px;
-                                }
-                    li{background-color: transparent;
-                    a{background-color: transparent;}}
-                            &:hover{
-                                left: 0;
-                            }
-                        }
-                        }
-                }
-
-
  }
