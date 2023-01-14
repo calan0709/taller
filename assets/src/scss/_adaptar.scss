@@ -18,14 +18,18 @@ body{
                     .video{align-items: center;
                         justify-content: center;}}}
         aside{width: 100%;
-                display: flexbox;
-                justify-content: center;}
+                display:flex;
+                flex-direction: column;
+                .galeria{width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;}}
         footer{width: 100%;}
     }
 
 
 
-    @media (max-width:540px){
+    @media (max-width:603px){
         nav{ width: 100%;
                 .fa-bars{display: block;
                         color: rgba(255, 0, 0, 0.459);
