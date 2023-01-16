@@ -26,20 +26,30 @@ main{width: 100%;
                     grid-row: 2/3;
                     display: flex;
                     .tarjeta1 {width: 100%;
-                        background-color: rgb(255, 255, 255);
+                        background-color: rgba(255, 255, 255, 0.137);
                         border: solid 1px;
                         padding: 10px;
                         margin: 10px;
-                        img{width: 100%;}
+                        text-align: center;
+                        border-radius: 20px;
+                        .im1{width: 100%;}
+                        .im2{width: 100%;}
+                        .im3{width: 90%;}
+                        .im5{width: 100%;}
+                        .im4{width: 100%;}
+                        .im9{width: 90%;}
                         h4{font-size: 30px;
                             background-color: transparent;
+                            color: rgb(243, 194, 134);
                             a{background-color: transparent;
-                                color: rgb(189, 55, 31);}}
-                        p{color: rgb(136, 45, 45);}
+                                color: rgb(243, 194, 134)}}
+                        p{color:rgba(161, 182, 71, 0.671);
+                        padding: 5px;}
                         ul{background-color: transparent;
                             li{list-style: none;
                                 margin:3px;
-                                background-color: transparent;}
+                                background-color: transparent;
+                                color: rgba(161, 182, 71, 0.671);}
                             }}}
         h2{color: rgb(110, 110, 110);
             font-size: 18px;

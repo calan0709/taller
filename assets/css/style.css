@@ -199,24 +199,43 @@ main .tarjetas {
 }
 main .tarjetas .tarjeta1 {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.137);
   border: solid 1px;
   padding: 10px;
   margin: 10px;
+  text-align: center;
+  border-radius: 20px;
 }
-main .tarjetas .tarjeta1 img {
+main .tarjetas .tarjeta1 .im1 {
   width: 100%;
+}
+main .tarjetas .tarjeta1 .im2 {
+  width: 100%;
+}
+main .tarjetas .tarjeta1 .im3 {
+  width: 90%;
+}
+main .tarjetas .tarjeta1 .im5 {
+  width: 100%;
+}
+main .tarjetas .tarjeta1 .im4 {
+  width: 100%;
+}
+main .tarjetas .tarjeta1 .im9 {
+  width: 90%;
 }
 main .tarjetas .tarjeta1 h4 {
   font-size: 30px;
   background-color: transparent;
+  color: rgb(243, 194, 134);
 }
 main .tarjetas .tarjeta1 h4 a {
   background-color: transparent;
-  color: rgb(189, 55, 31);
+  color: rgb(243, 194, 134);
 }
 main .tarjetas .tarjeta1 p {
-  color: rgb(136, 45, 45);
+  color: rgba(161, 182, 71, 0.671);
+  padding: 5px;
 }
 main .tarjetas .tarjeta1 ul {
   background-color: transparent;
@@ -225,6 +244,7 @@ main .tarjetas .tarjeta1 ul li {
   list-style: none;
   margin: 3px;
   background-color: transparent;
+  color: rgba(161, 182, 71, 0.671);
 }
 main h2 {
   color: rgb(110, 110, 110);
@@ -402,6 +422,11 @@ footer .redes3 img {
   }
   body main {
     width: 100%;
+  }
+  body main .tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   body main .registro {
     grid-column: 1/5;
