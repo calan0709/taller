@@ -10,19 +10,22 @@ body{
         main{width: 100%;
             .tarjetas{display: flex;
                         justify-content: center;
-                        flex-wrap: wrap;
-
+                        flex-wrap: wrap;}
+            .registromain{display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                .registro{
+                    padding: 5px;
+                    margin: 5px;}
+                .contacto{width: 100%;
+                    .mapa{width: 100%;}}
+                .videoregistro{
+                        padding: 10px;
+                        margin: 10px;
+                        .video{align-items: center;
+                            justify-content: center;}}}
             }
-            .registro{grid-column: 1/5;
-                        grid-row: 2/3;
-                padding: 5px;
-                margin: 5px;}
-            .mapa{width: 100%;}
-            .videoregistro{grid-column: 1/5;
-                    padding: 10px;
-                    margin: 10px;
-                    .video{align-items: center;
-                        justify-content: center;}}}
+            
         aside{width: 100%;
                 display:flex;
                 flex-direction: column;
