@@ -6,7 +6,8 @@ body{
         }
             
             }
-        header{width: 100%;}
+        header{width: 100%;
+                .logoauto8{width: 100%;}}
         main{width: 100%;
             .tarjetas{display: flex;
                         justify-content: center;
@@ -67,11 +68,19 @@ body{
                         }}
             }
         header{width: 100%;
-                fieldset{border-color:black;}}
+                display: flex;
+                flex-direction: column;
+                fieldset{border-color:black;}
+                .logoauto8{width: 100%;
+                            }}
         main{width: 100%;
             display: flex;
             flex-direction: column;
-            .video{width: 100%;}
+            justify-content: center;
+            .videos{width: 100%;
+                    margin: 1px;
+                    padding: 1px;
+                    .video1{width: 100%;}}
             .registro{
                 label{padding: 1px;
                     margin: 1px;
