@@ -102,8 +102,8 @@ main{width: 100%;
                 .mapa{width: 100%;}}
     .registro{grid-column: 3/5;
                 grid-row: 1/5;
-                padding: 5px;
-                margin: 5px;
+                padding: 1px;
+                margin:1px;
                 width: 100%;
                 label{margin: 5px;}
                 textarea{margin: 5px;}
@@ -135,15 +135,10 @@ main{width: 100%;
                             #posterior:hover {color: blue; text-decoration: underline;}
                             #titulos { font: normal 20pt "arial black"; padding: 0.2em; }
                       
-    .logoauto8{grid-column: 1/5;
-                grid-row: 1/2;
+    .logoauto8{width: 100%;
                 display: flex;
-                flex-wrap: wrap;
-                flex-direction: row;
-                justify-content: center;
-                width: 100%;
-                height: 20%;
-                margin: 10px;
+                margin: 5px;
+                background-color: #9bf5ff;
                 img{
                     width: 50px;
                     height:50px;

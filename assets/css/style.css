@@ -139,7 +139,7 @@ header .logoauto8 {
   justify-content: center;
   width: 100%;
   height: 20%;
-  margin: 10px;
+  margin: 2px;
 }
 header .logoauto8 img {
   width: 50px;
@@ -325,8 +325,8 @@ main .contacto .mapa {
 main .registro {
   grid-column: 3/5;
   grid-row: 1/5;
-  padding: 5px;
-  margin: 5px;
+  padding: 1px;
+  margin: 1px;
   width: 100%;
 }
 main .registro label {
@@ -399,15 +399,10 @@ main #titulos {
   padding: 0.2em;
 }
 main .logoauto8 {
-  grid-column: 1/5;
-  grid-row: 1/2;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
   width: 100%;
-  height: 20%;
-  margin: 10px;
+  display: flex;
+  margin: 5px;
+  background-color: #9bf5ff;
 }
 main .logoauto8 img {
   width: 50px;
@@ -443,19 +438,23 @@ footer {
   background-color: rgb(13, 61, 61);
 }
 footer .fin {
-  color: #9bf5ff;
+  width: 100%;
+  color: #a3a3a3;
   grid-column: 1/2;
 }
 footer .fin button {
-  margin-top: 10px;
-  padding: 5px 15px;
+  font-size: 25px;
+  width: 100%;
   background-color: #296066;
   border-radius: 10px;
+  margin: 4px;
+  padding: 4px;
 }
 footer .fin button:hover {
   -webkit-box-shadow: 11px 13px 37px 3px rgb(245, 0, 0);
 }
 footer .fin button a {
+  width: 100%;
   background-color: transparent;
   text-decoration: none;
   color: #000000;
@@ -466,7 +465,7 @@ footer .qr {
   grid-row: 1/4;
 }
 footer .qr img {
-  width: 40%;
+  width: 120px;
 }
 footer .qr img:hover {
   -webkit-box-shadow: 11px 13px 37px 3px rgba(248, 113, 226, 0.582);
@@ -565,22 +564,36 @@ footer .redes3 img {
   }
   body footer {
     width: 100%;
+    margin: 1px;
+    padding: 1px;
   }
-}
-@media (max-width: 603px) {
-  body nav {
+  body footer .fin {
     width: 100%;
   }
-  body nav .fa-bars {
+  body footer .fin button {
+    margin: 4px;
+    padding: 4px;
+    font-size: 20px;
+  }
+  body footer .qr {
+    width: 100%;
+  }
+}
+
+@media (max-width: 603px) {
+  nav {
+    width: 100%;
+  }
+  nav .fa-bars {
     display: block;
     color: rgba(255, 0, 0, 0.459);
     font-size: 37px;
     background-color: rgb(0, 0, 0);
   }
-  body nav .fa-bars:hover + ul {
+  nav .fa-bars:hover + ul {
     left: 0;
   }
-  body nav ul {
+  nav ul {
     flex-direction: column;
     position: fixed;
     background-color: rgb(1, 1, 1);
@@ -593,86 +606,89 @@ footer .redes3 img {
     left: -300px;
     top: 1;
   }
-  body nav ul img {
+  nav ul img {
     margin: 5px;
   }
-  body nav ul li {
+  nav ul li {
     background-color: transparent;
   }
-  body nav ul li a {
+  nav ul li a {
     background-color: transparent;
   }
-  body nav ul:hover {
+  nav ul:hover {
     left: 0;
   }
-  body header {
+  header {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  body header fieldset {
+  header fieldset {
     border-color: black;
   }
-  body header .logoauto8 {
+  header .logoauto8 {
     width: 100%;
   }
-  body main {
+  main {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  body main .videos {
+  main .videos {
     width: 100%;
     margin: 1px;
     padding: 1px;
   }
-  body main .videos .video1 {
+  main .videos .video1 {
     width: 100%;
   }
-  body main .registro label {
+  main .registro label {
     padding: 1px;
     margin: 1px;
     font-size: 13px;
   }
-  body main .registro h3 {
+  main .registro h3 {
     font-size: 16px;
     padding: 5px;
     margin: 5px;
   }
-  body main .contacto {
+  main .contacto {
     width: 100%;
   }
-  body main .tarjetas {
+  main .tarjetas {
     display: flex;
     flex-wrap: wrap;
   }
-  body aside {
+  aside {
     width: 100%;
     width: 100%;
     display: flexbox;
     flex-direction: column;
   }
-  body footer {
+  footer {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  body footer .fin {
-    padding: 5px;
-    margin: 5px;
+  footer .fin {
+    width: 100%;
   }
-  body footer .fin button {
+  footer .fin button {
     border-color: rgb(15, 58, 17);
+    width: 100%;
+    font-size: 20px;
+    padding: 3px;
+    margin: 3px;
   }
-  body footer .qr {
+  footer .qr {
+    width: 100%;
     grid-column: 3/4;
     grid-row: 2/3;
     text-align: center;
     justify-content: center;
   }
 }
-
 body {
   background-color: #000000;
 }

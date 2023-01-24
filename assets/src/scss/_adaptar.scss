@@ -34,7 +34,17 @@ body{
                         display: flex;
                         justify-content: center;
                         flex-wrap: wrap;}}
-        footer{width: 100%;}
+        footer{width: 100%;
+                margin: 1px;
+                padding: 1px;
+                .fin{width: 100%;
+                    button{margin: 4px;
+                        padding: 4px;
+                        font-size: 20px;}}
+                .qr{width: 100%;
+                }
+                
+                }}
     }
 
 
@@ -100,11 +110,17 @@ body{
         footer{width: 100%;
                 display:grid;
                 grid-template-columns: repeat(3,1fr);
-                .fin{padding: 5px;
-                        margin: 5px;
-                    button{border-color: rgb(15, 58, 17);}
+                
+                .fin{width: 100%;
+                   
+                    button{border-color: rgb(15, 58, 17);
+                            width: 100%;
+                            font-size: 20px;
+                            padding: 3px;
+                            margin: 3px;}
                 }
-                .qr{grid-column: 3/4;
+                .qr{width: 100%;
+                    grid-column: 3/4;
                     grid-row: 2/3;
                     text-align: center;
                     justify-content: center;
@@ -114,5 +130,3 @@ body{
 
             }
                     
-    
-    }
