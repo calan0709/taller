@@ -24,15 +24,14 @@ aside h3 {
 }
 aside .galeria {
   width: 100%;
-  display: flex;
+  display: grid;
   justify-content: center;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 6fr);
 }
 aside .galeria .im1 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   width: 100px;
+  margin: 10px;
+  padding: 10px;
   transition: 0.4s;
 }
 aside .galeria .im1:hover {
@@ -48,7 +47,7 @@ aside .logoauto {
   justify-content: center;
   width: 100%;
   height: 20%;
-  margin: 10px;
+  margin: 0px;
 }
 aside .logoauto img {
   width: 50px;
@@ -168,8 +167,8 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /*formulario de busqueda de fechas*/
-  /*cabecera del calendario*/
+  justify-content: center;
+  align-items: center;
 }
 main h1 {
   grid-column: 1/5;
@@ -323,25 +322,31 @@ main .contacto .mapa {
   width: 100%;
 }
 main .registro {
+  width: 100%;
   grid-column: 3/5;
   grid-row: 1/5;
   padding: 1px;
   margin: 1px;
+  justify-content: center;
+  align-items: center;
+}
+main .registro fieldset {
   width: 100%;
-}
-main .registro label {
-  margin: 5px;
-}
-main .registro textarea {
-  margin: 5px;
-}
-main .registro .contenido {
-  width: 100%;
+  justify-content: center;
+  align-items: center;
   color: rgb(253, 253, 253);
   font-family: texto2;
   background-color: rgb(0, 0, 0);
+  /*formulario de busqueda de fechas*/
+  /*cabecera del calendario*/
 }
-main .boton1 {
+main .registro fieldset label {
+  margin: 5px;
+}
+main .registro fieldset textarea {
+  margin: 5px;
+}
+main .registro fieldset .boton1 {
   color: rgba(189, 33, 33, 0.5);
   border: 1px solid;
   padding: 10px;
@@ -349,60 +354,61 @@ main .boton1 {
   background-color: rgba(53, 10, 10, 0.377);
   border-radius: 80px;
 }
-main #fechaactual i {
+main .registro fieldset #fechaactual i {
   cursor: pointer;
 }
-main #fechaactual i:hover {
+main .registro fieldset #fechaactual i:hover {
   color: rgb(219, 30, 30);
   text-decoration: underline;
 }
-main #buscafecha {
+main .registro fieldset #buscafecha {
   background-color: rgb(13, 61, 61);
   color: #c2c2c2;
   padding: 5px;
 }
-main #buscafecha select, main #buscafecha input {
+main .registro fieldset #buscafecha select, main .registro fieldset #buscafecha input {
   background-color: #9bf5ff;
   color: rgba(207, 24, 24, 0.8235294118);
   font: bold 10pt arial;
 }
-main #buscafecha [type=text] {
+main .registro fieldset #buscafecha [type=text] {
   text-align: center;
 }
-main #buscafecha [type=button] {
+main .registro fieldset #buscafecha [type=button] {
   cursor: pointer;
 }
-main #anterior {
+main .registro fieldset #anterior {
   float: left;
   width: 100px;
   font: bold 12pt arial;
   padding: 0.5em 0.1em;
   cursor: pointer;
 }
-main #posterior {
+main .registro fieldset #posterior {
   float: right;
   width: 100px;
   font: bold 12pt arial;
   padding: 0.5em 0.1em;
   cursor: pointer;
 }
-main #anterior:hover {
+main .registro fieldset #anterior:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
 }
-main #posterior:hover {
+main .registro fieldset #posterior:hover {
   color: blue;
   text-decoration: underline;
 }
-main #titulos {
+main .registro fieldset #titulos {
   font: normal 20pt "arial black";
   padding: 0.2em;
 }
 main .logoauto8 {
   width: 100%;
   display: flex;
-  margin: 5px;
-  background-color: #9bf5ff;
+  justify-content: center;
+  background-color: #000000;
+  margin: 0px;
 }
 main .logoauto8 img {
   width: 50px;
@@ -417,14 +423,11 @@ main .logo8 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
-  height: 20%;
+  margin: 0px;
 }
 main .logo8 img {
   width: 50px;
   height: 50px;
-  padding: 2px;
-  margin: 2px;
 }
 
 footer {
@@ -522,34 +525,46 @@ footer .redes3 img {
   }
   body main {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body main .videos {
+    width: 100%;
   }
   body main .tarjetas {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
-  body main .registromain {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  body main .registro {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
   }
-  body main .registromain .registro {
-    padding: 5px;
-    margin: 5px;
-  }
-  body main .registromain .contacto {
+  body main .registro .contenido {
     width: 100%;
   }
-  body main .registromain .contacto .mapa {
+  body main .contacto {
     width: 100%;
   }
-  body main .registromain .videoregistro {
+  body main .contacto .mapa {
+    width: 100%;
+    margin: 0px;
+  }
+  body main .videoregistro {
+    width: 100%;
     padding: 10px;
     margin: 10px;
   }
-  body main .registromain .videoregistro .video {
+  body main .videoregistro .video {
     align-items: center;
     justify-content: center;
+  }
+  body main .logo8 {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
   }
   body aside {
     width: 100%;
@@ -558,9 +573,8 @@ footer .redes3 img {
   }
   body aside .galeria {
     width: 100%;
-    display: flex;
+    display: grid;
     justify-content: center;
-    flex-wrap: wrap;
   }
   body footer {
     width: 100%;
@@ -643,12 +657,18 @@ footer .redes3 img {
   main .videos .video1 {
     width: 100%;
   }
-  main .registro label {
+  main .registro {
+    width: 100%;
+  }
+  main .registro fieldset {
+    width: 100%;
+  }
+  main .registro fieldset label {
     padding: 1px;
     margin: 1px;
     font-size: 13px;
   }
-  main .registro h3 {
+  main .registro fieldset h3 {
     font-size: 16px;
     padding: 5px;
     margin: 5px;
@@ -659,6 +679,13 @@ footer .redes3 img {
   main .tarjetas {
     display: flex;
     flex-wrap: wrap;
+  }
+  main .logo8 {
+    width: 100%;
+  }
+  main iframe {
+    width: 100%;
+    margin: 0px;
   }
   aside {
     width: 100%;

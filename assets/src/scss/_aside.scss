@@ -11,13 +11,13 @@ aside{display: flex;
         padding: 5px;
         margin: 5px;}
     .galeria{width: 100%;
-            display: flex;
+            display:grid;
             justify-content: center;
-            flex-wrap: wrap;
-            .im1{display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
+            grid-template-columns: repeat(4,6fr);
+            .im1{
                 width:100px;
+                margin: 10px;
+                padding: 10px;
                 transition: .4s;
                 &:hover{transform:scale(1.5)}
                 img{width:200px;
@@ -30,7 +30,7 @@ aside{display: flex;
                 justify-content: center;
                 width: 100%;
                 height: 20%;
-                margin: 10px;
+                margin:0px;
         img{
             width: 50px;
             height:50px;

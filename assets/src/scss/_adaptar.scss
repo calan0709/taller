@@ -9,31 +9,36 @@ body{
         header{width: 100%;
                 .logoauto8{width: 100%;}}
         main{width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .videos{width: 100%;}
             .tarjetas{display: flex;
                         justify-content: center;
                         flex-wrap: wrap;}
-            .registromain{display: flex;
-                            flex-direction: column;
-                            flex-wrap: wrap;
-                .registro{
-                    padding: 5px;
-                    margin: 5px;}
+                .registro{width: 100%;
+                            padding: 0px;
+                            margin: 0px;
+                            .contenido{width: 100%;}}
                 .contacto{width: 100%;
-                    .mapa{width: 100%;}}
-                .videoregistro{
+                    .mapa{width: 100%;
+                            margin: 0px;}}
+                .videoregistro{width: 100%;
                         padding: 10px;
                         margin: 10px;
                         .video{align-items: center;
-                            justify-content: center;}}}
+                            justify-content: center;}}
+                .logo8{width: 100%;
+                margin: 0px;
+                padding: 0px;}
             }
             
         aside{width: 100%;
                 display:flex;
                 flex-direction: column;
                 .galeria{width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        flex-wrap: wrap;}}
+                        display: grid;
+                        justify-content: center;}}
         footer{width: 100%;
                 margin: 1px;
                 padding: 1px;
@@ -91,17 +96,23 @@ body{
                     margin: 1px;
                     padding: 1px;
                     .video1{width: 100%;}}
-            .registro{
-                label{padding: 1px;
-                    margin: 1px;
-                    font-size: 13px;}
-                h3{font-size: 16px;
-                    padding: 5px;
-                    margin: 5px;}
+            .registro{width: 100%;
+                fieldset{width: 100%;
+                    label{padding: 1px;
+                        margin: 1px;
+                        font-size: 13px;}
+                    h3{font-size: 16px;
+                        padding: 5px;
+                        margin: 5px;}
+            }
+                
             }
             .contacto{width: 100%;}
             .tarjetas{display: flex;
                         flex-wrap: wrap;}
+            .logo8{width: 100%;}
+            iframe{width: 100%;
+                    margin:0px;}
             }
         aside{width: 100%;
             width: 100%;
