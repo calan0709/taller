@@ -168,7 +168,8 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
-  align-items: center;
+  padding: 0px;
+  margin: 0px;
 }
 main h1 {
   grid-column: 1/5;
@@ -312,6 +313,7 @@ main .contacto {
   grid-row: 2/5;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 main .contacto p {
   color: rgb(11, 119, 119);
@@ -320,6 +322,8 @@ main .contacto p {
 }
 main .contacto .mapa {
   width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 main .registro {
   width: 100%;
@@ -327,26 +331,34 @@ main .registro {
   grid-row: 1/5;
   padding: 1px;
   margin: 1px;
-  justify-content: center;
-  align-items: center;
 }
-main .registro fieldset {
+main .registro .contenido {
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   color: rgb(253, 253, 253);
   font-family: texto2;
   background-color: rgb(0, 0, 0);
+  text-align: center;
   /*formulario de busqueda de fechas*/
   /*cabecera del calendario*/
 }
-main .registro fieldset label {
+main .registro .contenido label {
   margin: 5px;
 }
-main .registro fieldset textarea {
+main .registro .contenido h3 {
+  text-align: center;
+}
+main .registro .contenido textarea {
   margin: 5px;
 }
-main .registro fieldset .boton1 {
+main .registro .contenido form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .registro .contenido .boton1 {
   color: rgba(189, 33, 33, 0.5);
   border: 1px solid;
   padding: 10px;
@@ -354,52 +366,52 @@ main .registro fieldset .boton1 {
   background-color: rgba(53, 10, 10, 0.377);
   border-radius: 80px;
 }
-main .registro fieldset #fechaactual i {
+main .registro .contenido #fechaactual i {
   cursor: pointer;
 }
-main .registro fieldset #fechaactual i:hover {
+main .registro .contenido #fechaactual i:hover {
   color: rgb(219, 30, 30);
   text-decoration: underline;
 }
-main .registro fieldset #buscafecha {
+main .registro .contenido #buscafecha {
   background-color: rgb(13, 61, 61);
   color: #c2c2c2;
   padding: 5px;
 }
-main .registro fieldset #buscafecha select, main .registro fieldset #buscafecha input {
+main .registro .contenido #buscafecha select, main .registro .contenido #buscafecha input {
   background-color: #9bf5ff;
   color: rgba(207, 24, 24, 0.8235294118);
   font: bold 10pt arial;
 }
-main .registro fieldset #buscafecha [type=text] {
+main .registro .contenido #buscafecha [type=text] {
   text-align: center;
 }
-main .registro fieldset #buscafecha [type=button] {
+main .registro .contenido #buscafecha [type=button] {
   cursor: pointer;
 }
-main .registro fieldset #anterior {
+main .registro .contenido #anterior {
   float: left;
   width: 100px;
   font: bold 12pt arial;
   padding: 0.5em 0.1em;
   cursor: pointer;
 }
-main .registro fieldset #posterior {
+main .registro .contenido #posterior {
   float: right;
   width: 100px;
   font: bold 12pt arial;
   padding: 0.5em 0.1em;
   cursor: pointer;
 }
-main .registro fieldset #anterior:hover {
+main .registro .contenido #anterior:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
 }
-main .registro fieldset #posterior:hover {
+main .registro .contenido #posterior:hover {
   color: blue;
   text-decoration: underline;
 }
-main .registro fieldset #titulos {
+main .registro .contenido #titulos {
   font: normal 20pt "arial black";
   padding: 0.2em;
 }
@@ -442,11 +454,10 @@ footer {
 }
 footer .fin {
   width: 100%;
-  color: #a3a3a3;
   grid-column: 1/2;
 }
 footer .fin button {
-  font-size: 25px;
+  font-size: 20px;
   width: 100%;
   background-color: #296066;
   border-radius: 10px;
@@ -457,6 +468,35 @@ footer .fin button:hover {
   -webkit-box-shadow: 11px 13px 37px 3px rgb(245, 0, 0);
 }
 footer .fin button a {
+  width: 100%;
+  background-color: transparent;
+  text-decoration: none;
+  color: #000000;
+  font-family: texto1;
+}
+footer .fin1 {
+  width: 100%;
+  grid-column: 1/2;
+  margin: 2px;
+  padding: 2px;
+}
+@media (max-width: 1043px) {
+  footer .fin1 {
+    width: 100%;
+  }
+}
+footer .fin1 button {
+  font-size: 20px;
+  width: 100%;
+  background-color: #296066;
+  border-radius: 10px;
+  margin: 4px;
+  padding: 4px;
+}
+footer .fin1 button:hover {
+  -webkit-box-shadow: 11px 13px 37px 3px rgb(245, 0, 0);
+}
+footer .fin1 button a {
   width: 100%;
   background-color: transparent;
   text-decoration: none;
@@ -566,6 +606,9 @@ footer .redes3 img {
     margin: 0px;
     padding: 0px;
   }
+  body main .logo8 .imglogo {
+    padding: 1px;
+  }
   body aside {
     width: 100%;
     display: flex;
@@ -591,6 +634,13 @@ footer .redes3 img {
   }
   body footer .qr {
     width: 100%;
+  }
+  body footer .fin1 {
+    width: 100%;
+  }
+  body footer .fin1 button {
+    width: 100%;
+    font-size: 15px;
   }
 }
 
@@ -660,18 +710,17 @@ footer .redes3 img {
   main .registro {
     width: 100%;
   }
-  main .registro fieldset {
+  main .registro .contenido {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
-  main .registro fieldset label {
-    padding: 1px;
-    margin: 1px;
-    font-size: 13px;
+  main .registro .contenido h3 {
+    text-align: center;
   }
-  main .registro fieldset h3 {
-    font-size: 16px;
-    padding: 5px;
-    margin: 5px;
+  main .registro .contenido .centro {
+    width: 100%;
   }
   main .contacto {
     width: 100%;
@@ -683,6 +732,10 @@ footer .redes3 img {
   main .logo8 {
     width: 100%;
   }
+  main .logo8 .imglogo {
+    margin: 1px;
+    padding: 1px;
+  }
   main iframe {
     width: 100%;
     margin: 0px;
@@ -690,8 +743,10 @@ footer .redes3 img {
   aside {
     width: 100%;
     width: 100%;
-    display: flexbox;
-    flex-direction: column;
+  }
+  aside .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
   }
   footer {
     width: 100%;

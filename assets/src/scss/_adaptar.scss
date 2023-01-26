@@ -29,8 +29,9 @@ body{
                         .video{align-items: center;
                             justify-content: center;}}
                 .logo8{width: 100%;
-                margin: 0px;
-                padding: 0px;}
+                        margin: 0px;
+                        padding: 0px;
+                    .imglogo{padding: 1px;}}
             }
             
         aside{width: 100%;
@@ -46,8 +47,10 @@ body{
                     button{margin: 4px;
                         padding: 4px;
                         font-size: 20px;}}
-                .qr{width: 100%;
-                }
+                .qr{width: 100%;}
+                .fin1{width: 100%;
+                        button{width: 100%;
+                                font-size: 15px;}}
                 
                 }}
     }
@@ -97,27 +100,28 @@ body{
                     padding: 1px;
                     .video1{width: 100%;}}
             .registro{width: 100%;
-                fieldset{width: 100%;
-                    label{padding: 1px;
-                        margin: 1px;
-                        font-size: 13px;}
-                    h3{font-size: 16px;
-                        padding: 5px;
-                        margin: 5px;}
+                .contenido{width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                h3{text-align: center;}
+                .centro{width: 100%;
+                    }
             }
-                
-            }
+                }
             .contacto{width: 100%;}
             .tarjetas{display: flex;
                         flex-wrap: wrap;}
-            .logo8{width: 100%;}
+            .logo8{width: 100%;
+                    .imglogo{margin: 1px;
+                            padding: 1px;}}
             iframe{width: 100%;
                     margin:0px;}
             }
         aside{width: 100%;
             width: 100%;
-            display: flexbox;
-            flex-direction: column;}
+            .galeria{display:grid;
+                grid-template-columns: repeat(2,6fr);}}
         footer{width: 100%;
                 display:grid;
                 grid-template-columns: repeat(3,1fr);
@@ -140,4 +144,4 @@ body{
         
 
             }
-                    
+                     

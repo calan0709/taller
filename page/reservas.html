@@ -85,141 +85,119 @@
                                         restauracion
                                           <input type="radio" name="restauracion">  
                                         </label>
+<div class="centro"> 
+        <h3>PRODUCTOS</h3>
 
-    <h3>PRODUCTOS</h3>
+        <label>
+            masilla
+            <input type="radio" name="masilla">
+        </label>
+        <label>
+            lijas
+            <input type="radio" name="lijas">
+        </label>
+        <label>
+            pintura
+            <input type="radio" name="pintura">
+        </label>
+        <label>
+            cinta
+            <input type="radio" name="cinta">
+        </label>
+        <label>
+            enpapelado
+            <input type="radio" name="enpapelado">
+        </label>
+        <label>
+            stretch
+            <input type="radio" name="stretch">
+        </label>
 
-    <label>
-        masilla
-        <input type="radio" name="masilla">
-    </label>
-    <label>
-        lijas
-        <input type="radio" name="lijas">
-    </label>
-    <label>
-        pintura
-        <input type="radio" name="pintura">
-    </label>
-    <label>
-        cinta
-        <input type="radio" name="cinta">
-    </label>
-    <label>
-        enpapelado
-        <input type="radio" name="enpapelado">
-    </label>
-    <label>
-        stretch
-        <input type="radio" name="stretch">
-    </label>
+        <br>
+        <br>
+        <h3>DATOS</h3>
+        <br>
+                <form action="" method="get">
+                    <label>
+                            Nombre:
+                            <input type="text" name="Nombre"placeholder="Ingresar Nombre">
+                    </label>
+                        <br>
+                        <br>
+                    <label>
+                            Apellido:
+                            <input type="text" name="Apellido"placeholder="Ingresar Apellido">
+                    </label>
+                        <br>
+                        <br>
+                    <label>
+                            Mail:
+                            <input type="email" name="mail" placeholder="Mail">
+                    </label>
+                        <br>
+                        <br>
+                    <label >
+                            Telefono:
+                            <input type="number" name="telefono" placeholder="Telefono">
+                    </label>
+                        <br>
+                        <br>
+                    <textarea name="mensaje" placeholder="mensaje"></textarea>
+                        <br>
+                        <br>
+                    <input class="boton1" type="reset" value="Limpiar">
+                        <br>
+                        <br>
+                    <input class="boton1" type="submit" value="Enviar">
+                        <br>
+                        <br>
+                    
 
-    <br>
-    <br>
-    <h3>DATOS</h3>
-    <br>
-            <form action="" method="get">
-                <label>
-                        Nombre:
-                        <input type="text" name="Nombre"placeholder="Ingresar Nombre">
-                </label>
-                    <br>
-                    <br>
-                <label>
-                        Apellido:
-                        <input type="text" name="Apellido"placeholder="Ingresar Apellido">
-                </label>
-                    <br>
-                    <br>
-                <label>
-                        Mail:
-                        <input type="email" name="mail" placeholder="Mail">
-                </label>
-                    <br>
-                    <br>
-                <label >
-                        Telefono:
-                        <input type="number" name="telefono" placeholder="Telefono">
-                </label>
-                    <br>
-                    <br>
-                <textarea name="mensaje" placeholder="mensaje"></textarea>
-                    <br>
-                    <br>
-                <input class="boton1" type="reset" value="Limpiar">
-                    <br>
-                    <br>
-                <input class="boton1" type="submit" value="Enviar">
-                    <br>
-                    <br>
-                
+        <h3>fechas disponibles</h3>
 
-    <h3>fechas disponibles</h3>
+        <div id="calendario">
+          <div id="anterior" onclick="mesantes()"></div>
+          <div id="posterior" onclick="mesdespues()"></div>
+          <h2 id="titulos"></h2>
+          <table id="diasc">
+            <tr id="fila0"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+            <tr id="fila1"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr id="fila2"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr id="fila3"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr id="fila4"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr id="fila5"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr id="fila6"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          </table>
+          <div id="fechaactual"><i onclick="actualizar()">HOY: </i></div>
+          <div id="buscafecha">
+            <form action="#" name="buscar">
+              <p>Buscar ... MES
+                <select name="buscames">
+                  <option value="0">Enero</option>
+                  <option value="1">Febrero</option>
+                  <option value="2">Marzo</option>
+                  <option value="3">Abril</option>
+                  <option value="4">Mayo</option>
+                  <option value="5">Junio</option>
+                  <option value="6">Julio</option>
+                  <option value="7">Agosto</option>
+                  <option value="8">Septiembre</option>
+                  <option value="9">Octubre</option>
+                  <option value="10">Noviembre</option>
+                  <option value="11">Diciembre</option>
+                </select>
+              ... AÑO ...
+                <input type="text" name="buscaanno" maxlength="4" size="4" />
+              ... 
+                <input type="button" value="BUSCAR" onclick="mifecha()" />
+              </p>
+            </form>
+          </div>
+        </div>
 
-    <div id="calendario">
-      <div id="anterior" onclick="mesantes()"></div>
-      <div id="posterior" onclick="mesdespues()"></div>
-      <h2 id="titulos"></h2>
-      <table id="diasc">
-        <tr id="fila0"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
-        <tr id="fila1"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr id="fila2"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr id="fila3"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr id="fila4"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr id="fila5"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr id="fila6"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-      </table>
-      <div id="fechaactual"><i onclick="actualizar()">HOY: </i></div>
-      <div id="buscafecha">
-        <form action="#" name="buscar">
-          <p>Buscar ... MES
-            <select name="buscames">
-              <option value="0">Enero</option>
-              <option value="1">Febrero</option>
-              <option value="2">Marzo</option>
-              <option value="3">Abril</option>
-              <option value="4">Mayo</option>
-              <option value="5">Junio</option>
-              <option value="6">Julio</option>
-              <option value="7">Agosto</option>
-              <option value="8">Septiembre</option>
-              <option value="9">Octubre</option>
-              <option value="10">Noviembre</option>
-              <option value="11">Diciembre</option>
-            </select>
-          ... AÑO ...
-            <input type="text" name="buscaanno" maxlength="4" size="4" />
-          ... 
-            <input type="button" value="BUSCAR" onclick="mifecha()" />
-          </p>
-        </form>
-      </div>
-    </div>
+        <h3> contáctanos para que podamos evaluar tu caso y darte un presupuesto.</h3>
 
-    <h3> contáctanos para que podamos evaluar tu caso y darte un presupuesto.</h3>
-
-    <div class="logo8">
-      <img class="imglogo" src="../assets/image/logo1.jpg" alt="">
-      <img class="imglogo" src="../assets/image/logo2.png" alt="">
-      <img class="imglogo" src="../assets/image/logo3.png" alt="">
-      <img class="imglogo" src="../assets/image/logo4.jpg" alt="">
-      <img class="imglogo" src="../assets/image/logo5.png" alt="">
-      <img class="imglogo" src="../assets/image/logo6.jpg" alt="">
-      <img class="imglogo" src="../assets/image/logo7.jpg" alt="">
-      
-  </div>
-  <div class="logoauto8">
-    <img class="imglogo" src="../assets/image/auto1.png" alt="">
-    <img class="imglogo" src="../assets/image/auto2.jpg" alt="">
-    <img class="imglogo" src="../assets/image/auto3.jpg" alt="">
-    <img class="imglogo" src="../assets/image/auto4.png" alt="">
-    <img class="imglogo" src="../assets/image/auto5.0.jpg" alt="">
-    <img class="imglogo" src="../assets/image/auto6.jpg" alt="">
-    <img class="imglogo" src="../assets/image/auto7.png" alt="">
-    <img class="imglogo" src="../assets/image/auto8.png" alt="">
-    <img class="imglogo" src="../assets/image/auto9.jfif" alt="">
-    <img class="imglogo" src="../assets/image/auto10.jpg" alt="">
-    <img class="imglogo" src="../assets/image/auto11.jpg" alt="">
-    <img class="imglogo" src="../assets/image/auto12.png" alt="">
+        
 </div>
     </fieldset>
   </div>
